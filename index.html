@@ -1,914 +1,1155 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sv">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Razmus Pålsson | IT Security & Software Testing</title>
+    <title>Razmus Pålsson | IT-säkerhet & mjukvarutestning</title>
 
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 
 <body>
 
-
-    <!-- ==================================================
-         01. NAVIGATION
-         ================================================== -->
-
     <header>
+        <nav class="navbar">
+            <a class="logo" href="#home">RP</a>
 
-        <nav class="navigation">
-
-            <a class="logo" href="#home">
-                RP
-            </a>
-
-            <div class="navigation-links">
-                <a href="#about">About Me</a>
-                <a href="#skills">Skills</a>
-                <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#contact">Contact</a>
+            <div class="nav-links">
+                <a href="#about">Om mig</a>
+                <a href="#skills">Kompetenser</a>
+                <a href="#projects">Projekt</a>
+                <a href="#experience">Erfarenhet</a>
+                <a href="#contact">Kontakt</a>
             </div>
-
         </nav>
-
     </header>
 
 
     <main>
 
+        <!-- HERO -->
+        <section class="hero" id="home">
 
-        <!-- ==================================================
-             02. INTRODUCTION BANNER
-             ================================================== -->
+            <div class="hero-content">
 
-    <section class="introduction" id="home">
-    <img
-        src="images/GodBanner.jpg"
-        alt="Razmus Pålsson portfolio banner">
-    </section>
+                <p class="intro">Hej, jag heter</p>
 
+                <h1>Razmus Pålsson</h1>
 
-        <!-- ==================================================
-             03. ABOUT ME
-             ================================================== -->
+                <h2>IT-säkerhet & mjukvarutestning</h2>
 
-        <section class="page-section" id="about">
+                <p>
+                    Student vid Högskolan Dalarna med intresse för
+                    cybersäkerhet, mjukvarutestning, testautomation
+                    och DevSecOps.
+                </p>
 
-            <div class="introduction-buttons">
+                <div class="hero-buttons">
+                    <a class="button primary" href="#projects">
+                        Mina projekt
+                    </a>
 
-                <a
-                    class="button primary-button"
-                    href="#projects"
-                >
-                    My Projects
-                </a>
-
-                <a
-                    class="button secondary-button"
-                    href="files/Razmus26v2.pdf"
-                    target="_blank"
-                >
-                    View CV
-                </a>
-
-            </div>
-
-            <h2>
-                About Me
-            </h2>
-
-            <p>
-                I am studying IT Security and Software Testing at Dalarna University,
-                where I am developing my knowledge of cybersecurity, programming,
-                and secure software development.
-            </p>
-
-            <p>
-                I also have an academic background in Japanese linguistics from
-                Lund University and international study experience in Japan.
-                Through my studies, projects, and previous work experience, I have
-                developed a structured approach to work, strong problem-solving skills,
-                and the ability to quickly adapt to new areas.
-            </p>
-
-        </section>
-
-
-        <!-- ==================================================
-             04. TECHNICAL SKILLS
-             ================================================== -->
-
-        <section class="page-section" id="skills">
-
-            <p class="section-category">
-                TECH STACK
-            </p>
-
-            <h2>
-                Technical Skills
-            </h2>
-
-            <p class="section-description">
-                Technologies and areas I work with through my studies,
-                projects, and independent development.
-            </p>
-
-
-            <div class="skills-container">
-
-
-                <!-- Programming & Web Development -->
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        💻 
-                
-                    </div>
-
-                    <h3>
-                        Programming & Web Development
-                    </h3>
-
-                    <div class="skill-list">
-
-                        <div class="skill">
-                            <div>
-                                <strong>Python</strong>
-                                <span>Programming & problem solving</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>C#</strong>
-                                <span>Object-oriented programming</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>HTML & CSS</strong>
-                                <span>Web development</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>JavaScript</strong>
-                                <span>Interactive web development</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- IT Security -->
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        🔐
-                    </div>
-
-                    <h3>
-                        IT Security
-                    </h3>
-
-                    <div class="skill-list">
-
-                        <div class="skill">
-                            <div>
-                                <strong>Cybersecurity</strong>
-                                <span>Security principles & threats</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>Risk Analysis</strong>
-                                <span>Risk identification & assessment</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>Network Security</strong>
-                                <span>Networking & security fundamentals</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Software Testing -->
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        ✓
-                    </div>
-
-                    <h3>
-                        Software Testing
-                    </h3>
-
-                    <div class="skill-list">
-
-                        <div class="skill">
-                            <div>
-                                <strong>Software Testing</strong>
-                                <span>Testing methods & quality assurance</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>Test Automation</strong>
-                                <span>Automated testing</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Development Tools -->
-
-                <article class="skill-card">
-
-                    <div class="skill-icon">
-                        ⚙
-                    </div>
-
-                    <h3>
-                        Development Tools
-                    </h3>
-
-                    <div class="skill-list">
-
-                        <div class="skill">
-                            <div>
-                                <strong>Git</strong>
-                                <span>Version control</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>GitHub</strong>
-                                <span>Code management & projects</span>
-                            </div>
-                        </div>
-
-                        <div class="skill">
-                            <div>
-                                <strong>VS Code</strong>
-                                <span>Development environment</span>
-                            </div>
-                        </div>
-
-                    </div>
-
-                </article>
-
+                    <a class="button secondary" href="files/Razmus_CV.pdf">
+                        Visa CV
+                    </a>
+                </div>
 
             </div>
 
         </section>
 
 
-        <!-- 05. PROJECTS -->
+        <!-- OM MIG -->
+        <section class="section" id="about">
 
-        <section class="page-section" id="projects">
+            <h2>Om mig</h2>
 
-            <p class="section-category">
-                PORTFOLIO
+            <p>
+                Jag studerar IT-säkerhet och mjukvarutestning vid
+                Högskolan Dalarna i Borlänge.
             </p>
 
-            <h2>
-                My Projects
-            </h2>
-
-            <p class="section-description">
-                Projects from my studies and independent development in
-                programming, web development, software testing, and IT security.
+            <p>
+                Mitt mål är att utvecklas inom områden som
+                IT-säkerhet, automatiserad testning, DevSecOps
+                och säker systemutveckling.
             </p>
 
+        </section>
 
-            <div class="projects-container">
+
+        <!-- KOMPETENSER -->
+  <!-- =========================
+     KOMPETENSER
+     ========================= -->
+
+<section class="section" id="skills">
+
+    <p class="section-label">TECH STACK</p>
+    <h2>Kompetenser & verktyg</h2>
+
+    <p class="section-intro">
+        Tekniker och områden som jag arbetar med i mina studier,
+        projekt och egen utveckling.
+    </p>
 
 
-                <!-- 01. Risk Register -->
+    <div class="skills-grid">
 
-                <article class="project-card">
+        <!-- PROGRAMMERING -->
+        <article class="skill-category">
 
-                    <div class="project-number">
-                        01
+            <div class="skill-icon">&lt;/&gt;</div>
+
+            <h3>Programmering</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Python</strong>
+                        <span>Programmering & problemlösning</span>
                     </div>
 
-                    <h3>
-                        Risk Register
-                    </h3>
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Java</strong>
+                        <span>Grundläggande programmering</span>
+                    </div>
+
+                    <span class="skill-level learning">
+                        Studerar
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>C#</strong>
+                        <span>Grundläggande kunskaper</span>
+                    </div>
+
+                    <span class="skill-level basic">
+                        Grundläggande
+                    </span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- WEBB -->
+        <article class="skill-category">
+
+            <div class="skill-icon">WEB</div>
+
+            <h3>Webbutveckling</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>HTML5</strong>
+                        <span>Semantisk struktur</span>
+                    </div>
+
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>CSS</strong>
+                        <span>Layout & responsiv design</span>
+                    </div>
+
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>JavaScript</strong>
+                        <span>DOM & interaktivitet</span>
+                    </div>
+
+                    <span class="skill-level learning">
+                        Studerar
+                    </span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- VERKTYG -->
+        <article class="skill-category">
+
+            <div class="skill-icon">GIT</div>
+
+            <h3>Verktyg & workflow</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Git</strong>
+                        <span>Versionshantering</span>
+                    </div>
+
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Codeberg</strong>
+                        <span>Repository & teamsamarbete</span>
+                    </div>
+
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>VS Code</strong>
+                        <span>Utvecklingsmiljö</span>
+                    </div>
+
+                    <span class="skill-level used">
+                        Använt
+                    </span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- CYBERSÄKERHET -->
+        <article class="skill-category featured-skill">
+
+            <div class="skill-icon">SEC</div>
+
+            <h3>Cybersäkerhet</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Riskanalys</strong>
+                        <span>Identifiera och bedöma risker</span>
+                    </div>
+
+                    <span class="skill-level academic">
+                        Studerat
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Hot & sårbarheter</strong>
+                        <span>Säkerhetsrisker och konsekvenser</span>
+                    </div>
+
+                    <span class="skill-level academic">
+                        Studerat
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Säkerhetsåtgärder</strong>
+                        <span>Riskreducerande skydd</span>
+                    </div>
+
+                    <span class="skill-level academic">
+                        Studerat
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Incidenthantering</strong>
+                        <span>Incidenter & rapportering</span>
+                    </div>
+
+                    <span class="skill-level academic">
+                        Studerat
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Cybersäkerhetskultur</strong>
+                        <span>Människor, beteende & säkerhet</span>
+                    </div>
+
+                    <span class="skill-level academic">
+                        Studerat
+                    </span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- TESTNING -->
+        <article class="skill-category">
+
+            <div class="skill-icon">QA</div>
+
+            <h3>Mjukvarutestning</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Software Testing</strong>
+                        <span>Testning & kvalitetssäkring</span>
+                    </div>
+
+                    <span class="skill-level learning">
+                        Studerar
+                    </span>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Testautomation</strong>
+                        <span>Automatiserade tester</span>
+                    </div>
+
+                    <span class="skill-level planned">
+                        Kommande
+                    </span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- SPRÅK -->
+        <article class="skill-category">
+
+            <div class="skill-icon">LANG</div>
+
+            <h3>Språk</h3>
+
+            <div class="skill-list">
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Svenska</strong>
+                        <span>Professionell kommunikation</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Engelska</strong>
+                        <span>Professionell kommunikation</span>
+                    </div>
+                </div>
+
+
+                <div class="skill-item">
+                    <div>
+                        <strong>Japanska</strong>
+                        <span>Akademiska studier & erfarenhet i Japan</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+        <!-- PROJEKT -->
+        <!-- PROJEKT -->
+<section class="section" id="projects">
+
+    <p class="section-label">PORTFOLIO</p>
+    <h2>Mina projekt</h2>
+
+    <p class="section-intro">
+        Projekt från mina studier och min egen utveckling inom
+        programmering, webbutveckling, testning och IT-säkerhet.
+    </p>
+
+    <div class="project-grid">
+
+        <!-- WEBBPROJEKT -->
+        <article class="project-card">
+
+            <div class="project-number">01</div>
+
+            <h3>Health & Society</h3>
+
+            <p>
+                Grupprojekt där vi utvecklar en responsiv webbplats
+                och samarbetar genom versionshantering.
+            </p>
+
+            <div class="project-tags">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>Git</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#">
+                    Kod →
+                </a>
+
+                <a href="#">
+                    Live demo →
+                </a>
+            </div>
+
+        </article>
+
+        <!-- SYSTEMPULSE -->
+<article class="project-card">
+
+    <div class="project-number">03</div>
+
+    <h3>SystemPulse</h3>
+
+    <p>
+        Fullstack-applikation för systemövervakning,
+        tjänstehälsa och incidenthantering med
+        statistik och analys.
+    </p>
+
+    <div class="project-tags">
+        <span>React</span>
+        <span>TypeScript</span>
+        <span>Express</span>
+        <span>SQLite</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/RazuPa/SystemPulse"
+           target="_blank"
+           rel="noopener noreferrer">
+            Kod →
+        </a>
+
+        <a href="https://razupa.github.io/SystemPulse/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Live demo →
+        </a>
+    </div>
+
+</article>
+
+
+<!-- JAVA -->
+<article class="project-card">
+
+    <div class="project-number">04</div>
+
+    <h3>Java Projects</h3>
+
+    <p>
+        Programmeringsprojekt och övningar inom Java
+        med fokus på arrayer, problemlösning och
+        objektorienterad programmering.
+    </p>
+
+    <div class="project-tags">
+        <span>Java</span>
+        <span>OOP</span>
+        <span>Arrays</span>
+    </div>
+
+    <div class="project-links">
+        <a href="https://github.com/RazuPa/JavaProjects"
+           target="_blank"
+           rel="noopener noreferrer">
+            Kod →
+        </a>
+
+        <a href="https://razupa.github.io/JavaProjects/"
+           target="_blank"
+           rel="noopener noreferrer">
+            Live demo →
+        </a>
+    </div>
+
+</article>
+
+
+        <!-- PYTHON -->
+        <article class="project-card">
+
+            <div class="project-number">02</div>
+
+            <h3>Python Projects</h3>
+
+            <p>
+                Mindre programmeringsprojekt där jag arbetar med
+                funktioner, användarinmatning, beräkningar och
+                problemlösning.
+            </p>
+
+            <div class="project-tags">
+                <span>Python</span>
+                <span>Functions</span>
+                <span>Problem solving</span>
+            </div>
+
+            <div class="project-links">
+                <a href="#">
+                    Kod →
+                </a>
+            </div>
+
+        </article>
+
+
+        <!-- SECURITY -->
+        <article class="project-card">
+
+            <div class="project-number">04</div>
+
+            <h3>Cybersecurity Lab</h3>
+
+            <p>
+                Kommande projekt inom nätverk, Linux,
+                IT-säkerhet och säker systemkonfiguration.
+            </p>
+
+            <div class="project-tags">
+                <span>Security</span>
+                <span>Linux</span>
+                <span>Networking</span>
+            </div>
+
+            <p class="project-status">
+                UNDER DEVELOPMENT
+            </p>
+
+        </article>
+
+
+        <!-- TESTING -->
+        <article class="project-card">
+
+            <div class="project-number">05</div>
+
+            <h3>Software Testing</h3>
+
+            <p>
+                Kommande projekt inom mjukvarutestning,
+                testdesign och automatiserade tester.
+            </p>
+
+            <div class="project-tags">
+                <span>Testing</span>
+                <span>QA</span>
+                <span>Automation</span>
+            </div>
+
+            <p class="project-status">
+                UNDER DEVELOPMENT
+            </p>
+
+        </article>
+
+
+        <!-- DEVSECOPS -->
+        <article class="project-card">
+
+            <div class="project-number">06</div>
+
+            <h3>DevSecOps Lab</h3>
+
+            <p>
+                Ett framtida projekt där utveckling, automatiserad
+                testning och säkerhet kombineras i ett CI/CD-flöde.
+            </p>
+
+            <div class="project-tags">
+                <span>Git</span>
+                <span>CI/CD</span>
+                <span>Security</span>
+            </div>
+
+            <p class="project-status">
+                PLANNED
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+ <!-- =========================
+     UTBILDNING & ERFARENHET
+     ========================= -->
+
+<section class="section" id="experience">
+
+    <p class="section-label">BAKGRUND</p>
+    <h2>Utbildning & erfarenhet</h2>
+
+    <div class="timeline">
+
+
+        <!-- 1. HÖGSKOLAN DALARNA -->
+        <article class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+                <p class="timeline-type">
+                    SEP 2026 – NUTID · UTBILDNING
+                </p>
+
+                <h3>IT-säkerhet och mjukvarutestning</h3>
+
+                <p class="timeline-place">
+                    Högskolan Dalarna · Borlänge
+                </p>
+
+                <p>
+                    Kandidatprogram med inriktning mot IT-säkerhet,
+                    programmering, mjukvarutestning, databaser och
+                    datakommunikation.
+                </p>
+
+                <div class="more-content">
 
                     <p>
-                        A web-based tool for identifying, documenting, and
-                        assessing information security risks. The project combines
-                        risk analysis with practical web development.
+                        Utbildningen ger mig möjlighet att utveckla
+                        tekniska kunskaper inom flera områden som är
+                        relevanta för IT-säkerhet och mjukvarutestning.
                     </p>
 
-                    <div class="project-technologies">
-                        <span>IT Security</span>
-                        <span>Risk Analysis</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                    </div>
+                    <ul>
+                        <li>IT-säkerhet</li>
+                        <li>Programmering</li>
+                        <li>Mjukvarutestning</li>
+                        <li>Databaser</li>
+                        <li>Datakommunikation</li>
+                    </ul>
 
-                    <div class="project-links">
+                </div>
 
-                        <a href="RIAprojekt/risk-register.html">
-                            View Project →
-                        </a>
+                <button class="read-more">Läs mer</button>
 
-                        <a
-                            href="https://github.com/RazuPa/portfolio/tree/main/RIAprojekt"
-                            target="_blank"
-                        >
-                            GitHub →
-                        </a>
+                <div class="experience-tags">
+                    <span>IT-säkerhet</span>
+                    <span>Programmering</span>
+                    <span>Testning</span>
+                    <span>Databaser</span>
+                </div>
 
-                    </div>
+            </div>
 
-                </article>
-
-                <!-- 02. Health & Society -->
-
-                <article class="project-card">
-                    <div class="project-number">02</div>
-
-                        <h3>Health & Society</h3>
-
-                            <p>
-                                A group project where we developed a responsive website using HTML,
-                                CSS, and JavaScript. The project also focused on collaboration,
-                                version control, and shared code development using Git.
-                            </p>
-
-                    <div class="project-technologies">
-        
-                        <span>HTML</span>
-                        <span>CSS</span>
-                        <span>JavaScript</span>
-                        <span>Git</span>
-                    
-                    </div>
-
-                    <div class="project-links">
-
-                    <a href="https://grupp16.codeberg.page/Webbprojekt/" target="_blank" rel="noopener noreferrer">
-                    View Project →
-                    </a>
-
-                    <a href="https://codeberg.org/Grupp16/Webbprojekt" target="_blank" rel="noopener noreferrer">
-                    Codeberg →
-                    </a>
-                 </div>
-                </article>
-
-                <!-- 03. Python Projects -->
-
-                <article class="project-card">
-                    <div class="project-number">03</div>
-
-                        <h3>Python Projects</h3>
-
-                            <p>
-                                Upcoming programming projects focusing on Python,
-                                problem solving, functions, user input, and automation.
-                            </p>
-
-                            <div class="project-technologies">
-                                <span>Python</span>
-                                <span>Functions</span>
-                                <span>Problem Solving</span>
-                    </div>
-
-                            <span class="project-status">UNDER DEVELOPMENT</span>
-                </article>
+        </article>
 
 
-             <!-- 04. Java Projects -->
+        <!-- 2. LINKÖPINGS UNIVERSITET -->
+        <article class="timeline-item">
 
-                <article class="project-card">
-                    <div class="project-number">04</div>
+            <div class="timeline-marker"></div>
 
-                        <h3>Java Projects</h3>
+            <div class="timeline-content">
 
-                            <p>
-                                A collection of Java projects developed while learning
-                                programming fundamentals, object-oriented programming,
-                                user input, calculations, and game logic.
-                            </p>
+                <p class="timeline-type">
+                    JUN 2026 – AUG 2026 · UTBILDNING
+                </p>
 
-                    <div class="project-technologies">
-                        <span>Java</span>
-                        <span>OOP</span>
-                        <span>Programming</span>
-                    </div>
+                <h3>Cybersäkerhet</h3>
 
-                    <div class="project-links">
-                        <a href="https://razupa.github.io/#projects" target="_blank" rel="noopener noreferrer">
-                            View Projects →
-                        </a>
+                <p class="timeline-place">
+                    Linköpings universitet · Linköping
+                </p>
 
-                        <a href="https://github.com/RazuPa" target="_blank" rel="noopener noreferrer">
-                            GitHub →
-                        </a>
-                    </div>
+                <p>
+                    Universitetskurs inom cybersäkerhet med fokus på
+                    risker, hot, sårbarheter och säkerhetsåtgärder.
+                </p>
+
+                <div class="more-content">
+
+                    <ul>
+                        <li>IT-säkerhet</li>
+                        <li>Risker, hot och sårbarheter</li>
+                        <li>Riskanalys</li>
+                        <li>Säkerhetsåtgärder</li>
+                        <li>Cybersäkerhetskultur</li>
+                        <li>Incidentrapportering</li>
+                    </ul>
+
+                </div>
+
+                <button class="read-more">Läs mer</button>
+
+                <div class="experience-tags">
+                    <span>Cybersäkerhet</span>
+                    <span>Riskanalys</span>
+                    <span>Hot & sårbarheter</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 3. LUNDS UNIVERSITET -->
+        <article class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+                <p class="timeline-type">
+                    2022 – NUTID · AKADEMISK BAKGRUND
+                </p>
+
+                <h3>Japansk lingvistik</h3>
+
+                <p class="timeline-place">
+                    Lunds universitet · Lund
+                </p>
+
+                <p>
+                    Akademisk bakgrund inom japanska språket,
+                    lingvistik och kommunikation med omfattande
+                    internationell erfarenhet.
+                </p>
+
+                <div class="more-content">
+
+                    <ul>
+                        <li>
+                            Fördjupning i japanska språket,
+                            lingvistik och kommunikation.
+                        </li>
+
+                        <li>
+                            Utbytesstudier vid Ritsumeikan University
+                            i Kyoto under ett år.
+                        </li>
+
+                        <li>
+                            Intensivkurs i japanska och
+                            klassledaransvar vid Chiba University.
+                        </li>
+
+                        <li>
+                            Internationell mentor för
+                            utbytesstudenter.
+                        </li>
+
+                        <li>
+                            Ledare för språkcafé med fokus på
+                            språkstöd och kommunikation.
+                        </li>
+
+                        <li>
+                            Erfarenhet av att vägleda elever
+                            språkligt genom mentorskap och
+                            språkcafé.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="read-more">Läs mer</button>
+
+                <div class="experience-tags">
+                    <span>Japanska</span>
+                    <span>Kommunikation</span>
+                    <span>Ledarskap</span>
+                    <span>Internationell erfarenhet</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 4. HÄSSLEHOLMS KOMMUN -->
+        <article class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+                <p class="timeline-type">
+                    OKT 2025 – JUN 2026 · ARBETSLIVSERFARENHET
+                </p>
+
+                <h3>Lärare / Elevassistent / Resurspedagog</h3>
+
+                <p class="timeline-place">
+                    Hässleholms kommun · Tyringe
+                </p>
+
+                <p>
+                    Arbetade med undervisning, elevstöd,
+                    individanpassning och struktur i skolmiljö.
+                </p>
+
+                <div class="more-content">
+
+                    <ul>
+                        <li>
+                            Genomförde undervisning i årskurs
+                            7–9 som lärarvikarie.
+                        </li>
+
+                        <li>
+                            Stöttade elever i både ämnesinnehåll
+                            och språkförståelse.
+                        </li>
+
+                        <li>
+                            Skapade struktur, studiero och
+                            trygghet i klassrummet.
+                        </li>
+
+                        <li>
+                            Samarbetade med lärare kring
+                            anpassningar, stödinsatser och
+                            elevutveckling.
+                        </li>
+
+                        <li>
+                            Arbetade nära elever med särskilda
+                            behov, inklusive NPF.
+                        </li>
+
+                        <li>
+                            Anpassade förklaringar och begrepp
+                            efter elevens språkliga nivå.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="read-more">Läs mer</button>
+
+                <div class="experience-tags">
+                    <span>Problemlösning</span>
+                    <span>Kommunikation</span>
+                    <span>Samarbete</span>
+                    <span>Ansvar</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 5. BADVÄRD -->
+        <article class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+                <p class="timeline-type">
+                    SEP 2016 – JAN 2022 · ARBETSLIVSERFARENHET
+                </p>
+
+                <h3>Badvärd</h3>
+
+                <p class="timeline-place">
+                    Helsingborg · Kristianstad · Bjuv · Perstorp
+                </p>
+
+                <p>
+                    Flerårig erfarenhet från offentliga
+                    simanläggningar med ansvar för säkerhet,
+                    service och anläggning.
+                </p>
+
+                <div class="more-content">
+
+                    <ul>
+                        <li>
+                            Arbetade periodvis genom både
+                            vikariat och säsongsarbete inom
+                            offentliga simanläggningar.
+                        </li>
+
+                        <li>
+                            Assisterade vid simlektioner och
+                            stöttade barn, ungdomar och vuxna
+                            i vattenvana och simkunskaper.
+                        </li>
+
+                        <li>
+                            Genomförde underhåll av anläggningar.
+                        </li>
+
+                        <li>
+                            Genomförde vattenprovtagning av
+                            bassänger.
+                        </li>
+
+                        <li>
+                            Delade ansvar för introduktion av
+                            nya sommarvikarier.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="read-more">Läs mer</button>
+
+                <div class="experience-tags">
+                    <span>Säkerhet</span>
+                    <span>Ansvar</span>
+                    <span>Service</span>
+                    <span>Teamwork</span>
+                </div>
+
+            </div>
+
+        </article>
+
+
+        <!-- 6. RESURSPEDAGOG -->
+        <article class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-content">
+
+                <p class="timeline-type">
+                    JAN 2017 – DEC 2019 · ARBETSLIVSERFARENHET
+                </p>
+
+                <h3>Resurspedagog</h3>
+
+                <p class="timeline-place">
+                    Perstorps kommun · Perstorp
+                </p>
+
+                <p>
+                    Individanpassat arbete med elever med fokus
+                    på lärande, motivation, struktur och trygghet.
+                </p>
+
+                <div class="more-content">
+
+                    <ul>
+                        <li>
+                            Stöttade elever med NPF i undervisning
+                            och sociala situationer.
+                        </li>
+
+                        <li>
+                            Arbetade individanpassat för att stärka
+                            lärande och motivation.
+                        </li>
+
+                        <li>
+                            Bidrog till struktur och trygghet
+                            i skolmiljön.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <button class="read-more">Läs mer</button>
+
+                <div class="experience-tags">
+                    <span>Pedagogik</span>
+                    <span>Problemlösning</span>
+                    <span>Kommunikation</span>
+                    <span>Ansvar</span>
+                </div>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- CERTIFIKAT -->
+    <div class="certificates">
+
+        <h3>Certifikat & meriter</h3>
+
+        <div class="certificate-grid">
+
+            <article class="certificate-card">
+
+                <p class="certificate-year">NOV 2025</p>
+
+                <h4>Certificate of International Merits</h4>
+
+                <p>
+                    Tilldelat för internationell erfarenhet
+                    och akademiskt engagemang.
+                </p>
+
+                <ul>
+                    <li>Utbytesstudier i Japan</li>
+                    <li>Ledarskap i internationell miljö</li>
+                    <li>Språkstöd och mentorskap</li>
+                </ul>
+
             </article>
 
 
-                <!-- 05. Cybersecurity Lab -->
+            <article class="certificate-card">
 
-                <article class="project-card">
+                <p class="certificate-year">AUG 2026</p>
 
-                    <div class="project-number">
-                        05
-                    </div>
-
-                    <h3>
-                        Cybersecurity Lab
-                    </h3>
-
-                    <p>
-                        An upcoming project focusing on networking, Linux,
-                        IT security, and secure system configuration.
-                    </p>
-
-                    <div class="project-technologies">
-                        <span>Security</span>
-                        <span>Linux</span>
-                        <span>Networking</span>
-                    </div>
-
-                    <p class="project-status">
-                        UNDER DEVELOPMENT
-                    </p>
-
-                </article>
-
-
-                <!-- 06. Software Testing -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        06
-                    </div>
-
-                    <h3>
-                        Software Testing
-                    </h3>
-
-                    <p>
-                        An upcoming project focusing on software testing,
-                        test design, and automated testing.
-                    </p>
-
-                    <div class="project-technologies">
-                        <span>Testing</span>
-                        <span>QA</span>
-                        <span>Automation</span>
-                    </div>
-
-                    <p class="project-status">
-                        UNDER DEVELOPMENT
-                    </p>
-
-                </article>
-
-
-                <!-- 07. DevSecOps Lab -->
-
-                <article class="project-card">
-
-                    <div class="project-number">
-                        07
-                    </div>
-
-                    <h3>
-                        DevSecOps Lab
-                    </h3>
-
-                    <p>
-                        A future project combining development,
-                        automated testing, and security within
-                        a CI/CD workflow.
-                    </p>
-
-                    <div class="project-technologies">
-                        <span>Git</span>
-                        <span>CI/CD</span>
-                        <span>Security</span>
-                    </div>
-
-                    <p class="project-status">
-                        PLANNED
-                    </p>
-
-                </article>
-
-
-            </div>
-
-        </section>
-
-
-        <!-- ==================================================
-             06. EDUCATION & WORK EXPERIENCE
-             ================================================== -->
-
-        <section class="page-section" id="experience">
-
-            <p class="section-category">
-                BACKGROUND
-            </p>
-
-            <h2>
-                Education & Experience
-            </h2>
-
-            <p class="section-description">
-                A brief overview of my education and work experience.
-                For my complete background and additional information,
-                please see my CV.
-            </p>
-
-
-            <div class="experience-list">
-
-
-                <!-- Dalarna University -->
-
-                <article class="experience-item">
-
-                    <div class="experience-marker"></div>
-
-                    <div class="experience-card">
-
-                        <p class="experience-date-type">
-                            SEP 2026 – PRESENT · EDUCATION
-                        </p>
-
-                        <h3>
-                            IT Security and Software Testing
-                        </h3>
-
-                        <p class="experience-location">
-                            Dalarna University · Borlänge
-                        </p>
-
-                        <p>
-                            Studies in IT security, programming,
-                            software testing, databases, and data communications.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Linköping University -->
-
-                <article class="experience-item">
-
-                    <div class="experience-marker"></div>
-
-                    <div class="experience-card">
-
-                        <p class="experience-date-type">
-                            JUN 2026 – AUG 2026 · EDUCATION
-                        </p>
-
-                        <h3>
-                            Cybersecurity
-                        </h3>
-
-                        <p class="experience-location">
-                            Linköping University · Linköping
-                        </p>
-
-                        <p>
-                            Cybersecurity with a focus on risks, threats,
-                            vulnerabilities, and security measures.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Lund University -->
-
-                <article class="experience-item">
-
-                    <div class="experience-marker"></div>
-
-                    <div class="experience-card">
-
-                        <p class="experience-date-type">
-                            2022 – PRESENT · ACADEMIC BACKGROUND
-                        </p>
-
-                        <h3>
-                            Japanese Linguistics
-                        </h3>
-
-                        <p class="experience-location">
-                            Lund University · Lund
-                        </p>
-
-                        <p>
-                            Studies in Japanese and linguistics with
-                            international study experience in Japan.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Hässleholm Municipality -->
-
-                <article class="experience-item">
-
-                    <div class="experience-marker"></div>
-
-                    <div class="experience-card">
-
-                        <p class="experience-date-type">
-                            OCT 2025 – JUN 2026 · WORK EXPERIENCE
-                        </p>
-
-                        <h3>
-                            Teacher / Teaching Assistant / Resource Educator
-                        </h3>
-
-                        <p class="experience-location">
-                            Hässleholm Municipality · Tyringe
-                        </p>
-
-                        <p>
-                            Teaching, individual student support, and responsibility
-                            for maintaining structure, safety, and a positive
-                            learning environment.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-                <!-- Swimming Facilities -->
-
-                <article class="experience-item">
-
-                    <div class="experience-marker"></div>
-
-                    <div class="experience-card">
-
-                        <p class="experience-date-type">
-                            SEP 2016 – JAN 2022 · WORK EXPERIENCE
-                        </p>
-
-                        <h3>
-                            Swimming Facility Staff / Swimming Instructor / Group Fitness Instructor
-                        </h3>
-
-                        <p class="experience-location">
-                            Helsingborg · Kristianstad · Bjuv · Perstorp
-                        </p>
-
-                        <p>
-                            Safety operations, instruction, customer service,
-                            and responsibility for facility and water quality checks.
-                        </p>
-
-                    </div>
-
-                </article>
-
-
-            </div>
-
-
-            <div class="cv-link">
+                <h4>KRAFT-instruktör – Fysisk aktivitet och hälsa</h4>
 
                 <p>
-                    My complete education, work experience, and qualifications
-                    are available in my CV.
+                    Kompetens inom fysisk aktivitet på recept (FaR),
+                    individanpassad fysisk aktivitet,
+                    träningsplanering och fysisk aktivitet vid
+                    olika sjukdomstillstånd.
                 </p>
 
-                <a
-                    href="files/Razmus26.pdf"
-                    target="_blank"
-                    class="button primary-button"
-                >
-                    View Full CV →
-                </a>
+            </article>
 
-            </div>
+        </div>
 
-        </section>
+    </div>
+
+</section>
 
 
-        <!-- ==================================================
-             07. OPPORTUNITIES
-             ================================================== -->
+        <!-- SÖKER -->
+        <!-- =========================
+     JAG SÖKER
+     ========================= -->
 
-        <section class="page-section" id="looking">
+<section class="section" id="looking">
 
-            <p class="section-category">
-                OPPORTUNITIES
+    <p class="section-label">MÖJLIGHETER</p>
+    <h2>Jag söker</h2>
+
+    <p class="section-intro">
+        Jag söker möjligheter att utvecklas inom IT och få praktisk
+        erfarenhet vid sidan av mina studier.
+    </p>
+
+    <div class="looking-grid">
+
+        <article class="looking-card">
+            <span class="looking-number">01</span>
+            <h3>Student- & deltidsjobb</h3>
+            <p>
+                Tekniska roller som går att kombinera med mina
+                studier vid Högskolan Dalarna.
             </p>
+        </article>
 
-            <h2>
-                What I'm Looking For
-            </h2>
-
-            <p class="section-description">
-                I am looking for opportunities to develop within IT and gain
-                practical experience alongside my studies.
+        <article class="looking-card">
+            <span class="looking-number">02</span>
+            <h3>Praktik</h3>
+            <p>
+                Möjlighet att omsätta mina kunskaper i en
+                professionell IT-miljö och utvecklas praktiskt.
             </p>
+        </article>
 
-
-            <div class="opportunities-container">
-
-
-                <!-- Student & Part-Time Jobs -->
-
-                <article class="opportunity-card">
-
-                    <span class="opportunity-number">
-                        01
-                    </span>
-
-                    <h3>
-                        Student & Part-Time Jobs
-                    </h3>
-
-                    <p>
-                        Technical roles that I can combine with my
-                        studies at Dalarna University.
-                    </p>
-
-                </article>
-
-
-                <!-- Internship -->
-
-                <article class="opportunity-card">
-
-                    <span class="opportunity-number">
-                        02
-                    </span>
-
-                    <h3>
-                        Internship
-                    </h3>
-
-                    <p>
-                        Opportunities to apply my knowledge in a
-                        professional IT environment and develop practical skills.
-                    </p>
-
-                </article>
-
-
-                <!-- Summer Jobs -->
-
-                <article class="opportunity-card">
-
-                    <span class="opportunity-number">
-                        03
-                    </span>
-
-                    <h3>
-                        Summer Jobs
-                    </h3>
-
-                    <p>
-                        Summer employment within IT or related
-                        technical fields.
-                    </p>
-
-                </article>
-
-
-            </div>
-
-
-            <!-- Areas of Interest -->
-
-            <div class="interests">
-
-                <div>
-
-                    <p class="interests-label">
-                        PARTICULARLY INTERESTED IN
-                    </p>
-
-                    <h3>
-                        Areas I Want to Develop Within
-                    </h3>
-
-                </div>
-
-
-                <div class="interests-list">
-
-                    <span>IT Security</span>
-                    <span>Software Testing</span>
-                    <span>QA</span>
-                    <span>Test Automation</span>
-                    <span>DevSecOps</span>
-                    <span>Cloud</span>
-                    <span>Infrastructure</span>
-                    <span>Technical Support</span>
-
-                </div>
-
-            </div>
-
-        </section>
-
-
-        <!-- ==================================================
-             08. CONTACT
-             ================================================== -->
-
-        <section class="page-section contact-section" id="contact">
-
-            <p class="section-category">
-                CONTACT
+        <article class="looking-card">
+            <span class="looking-number">03</span>
+            <h3>Sommarjobb</h3>
+            <p>
+                Sommararbete inom IT eller närliggande tekniska
+                verksamheter.
             </p>
+        </article>
 
-            <h2>
-                Get in Touch
-            </h2>
+    </div>
+
+
+    <div class="interest-box">
+
+        <div>
+            <p class="interest-label">SÄRSKILT INTRESSERAD AV</p>
+
+            <h3>Områden jag vill utvecklas inom</h3>
+        </div>
+
+        <div class="interest-tags">
+            <span>IT-säkerhet</span>
+            <span>Mjukvarutestning</span>
+            <span>QA</span>
+            <span>Testautomation</span>
+            <span>DevSecOps</span>
+            <span>Cloud</span>
+            <span>Infrastruktur</span>
+            <span>Teknisk support</span>
+        </div>
+
+    </div>
+
+</section>
+
+
+        <!-- KONTAKT -->
+        <section class="section contact" id="contact">
+
+            <h2>Kontakt</h2>
 
             <p>
-                I am open to opportunities within IT,
-                cybersecurity, and software testing.
+                Intresserad av att komma i kontakt?
+                Hör gärna av dig.
             </p>
 
-
-            <div class="contact-buttons">
-
-                <a
-                    class="button primary-button"
-                    href="mailto:RazmusPalsson@hotmail.com"
-                >
-                    Contact Me
-                </a>
-
-                <a
-                    class="button secondary-button"
-                    href="https://github.com/RazuPa"
-                    target="_blank"
-                >
-                    GitHub
-                </a>
-
-                <a
-                    class="button secondary-button"
-                    href="https://www.linkedin.com/in/razmus-palsson-220278ba/"
-                    target="_blank"
-                >
-                    LinkedIn
-                </a>
-
-            </div>
+            <a class="button primary"
+               href="mailto:din-email@example.com">
+                Kontakta mig
+            </a>
 
         </section>
-
 
     </main>
 
-
-    <!-- ==================================================
-         09. FOOTER
-         ================================================== -->
 
     <footer>
 
@@ -918,13 +1159,7 @@
 
     </footer>
 
-
-    <!-- ==================================================
-         10. JAVASCRIPT
-         ================================================== -->
-
     <script src="script.js"></script>
-
 
 </body>
 
