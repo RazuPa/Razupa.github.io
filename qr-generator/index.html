@@ -547,6 +547,165 @@
 
         </section>
 
+        <section class="pdf-editor-section">
+
+    <div class="pdf-editor-header">
+
+        <div>
+            <span class="eyebrow">
+                PDF TOOL
+            </span>
+
+            <h2>
+                Add your QR code to a PDF
+            </h2>
+
+            <p>
+                Upload a PDF, place your generated QR code on the page,
+                resize it, and export a new PDF directly in your browser.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="pdf-editor-layout">
+
+        <div class="pdf-controls">
+
+            <div class="field">
+
+                <label for="pdf-upload">
+                    Upload PDF
+                </label>
+
+                <input
+                    id="pdf-upload"
+                    type="file"
+                    accept="application/pdf"
+                >
+
+            </div>
+
+            <div class="pdf-page-controls">
+
+                <button
+                    id="prev-page-btn"
+                    class="secondary-button"
+                    type="button"
+                    disabled
+                >
+                    ← Previous
+                </button>
+
+                <span id="page-indicator">
+                    Page 0 / 0
+                </span>
+
+                <button
+                    id="next-page-btn"
+                    class="secondary-button"
+                    type="button"
+                    disabled
+                >
+                    Next →
+                </button>
+
+            </div>
+
+            <div class="pdf-qr-controls">
+
+                <button
+                    id="add-qr-to-pdf-btn"
+                    class="primary-button"
+                    type="button"
+                    disabled
+                >
+                    Add QR to PDF
+                </button>
+
+                <button
+                    id="remove-qr-from-pdf-btn"
+                    class="secondary-button"
+                    type="button"
+                    disabled
+                >
+                    Remove QR
+                </button>
+
+            </div>
+
+            <div class="field">
+
+                <label for="pdf-qr-size">
+                    QR size on PDF
+                </label>
+
+                <input
+                    id="pdf-qr-size"
+                    type="range"
+                    min="60"
+                    max="300"
+                    value="140"
+                >
+
+                <span id="pdf-qr-size-value">
+                    140 px
+                </span>
+
+            </div>
+
+            <button
+                id="export-pdf-btn"
+                class="download-button"
+                type="button"
+                disabled
+            >
+                Export PDF
+            </button>
+
+            <p class="field-help">
+                The PDF is processed locally in your browser.
+            </p>
+
+        </div>
+
+        <div class="pdf-preview-panel">
+
+            <div
+                id="pdf-empty-state"
+                class="qr-placeholder"
+            >
+                <h3>
+                    No PDF uploaded
+                </h3>
+
+                <p>
+                    Upload a PDF to start editing.
+                </p>
+            </div>
+
+            <div
+                id="pdf-canvas-wrapper"
+                class="pdf-canvas-wrapper hidden"
+            >
+
+                <canvas id="pdf-canvas"></canvas>
+
+                <img
+                    id="pdf-qr-overlay"
+                    class="pdf-qr-overlay hidden"
+                    alt="QR code overlay"
+                    draggable="false"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
         <section class="features">
 
             <div class="feature">
@@ -624,11 +783,26 @@
     </footer>
 
     <!-- QR CODE LIBRARY -->
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
-    ></script>
+   <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+></script>
 
-    <script src="script.js"></script>
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js"
+></script>
+
+<script
+    src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+></script>
+
+<script>
+    pdfjsLib.GlobalWorkerOptions.workerSrc =
+        "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
+</script>
+
+<script src="script.js"></script>
+
+<script src="pdf-editor.js"></script>
 
 </body>
 
