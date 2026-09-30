@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="A modern QR code generator that creates downloadable QR codes directly in your browser."
+    >
+
+    <title>QR Code Generator | Razmus Pålsson</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css"
+    >
+</head>
+
+<body>
+
+    <div class="background-glow glow-one"></div>
+    <div class="background-glow glow-two"></div>
+
+    <header class="site-header">
+
+        <a
+            href="#"
+            class="logo"
+        >
+            QR<span>.</span>
+        </a>
+
+        <div class="header-badge">
+            Browser Tool
+        </div>
+
+    </header>
+
+    <main class="page">
+
+        <section class="hero">
+
+            <div class="hero-label">
+                QR CODE GENERATOR
+            </div>
+
+            <h1>
+                Turn anything into a
+                <span>QR code.</span>
+            </h1>
+
+            <p>
+                Generate custom QR codes for websites,
+                messages, contact information and more.
+                Everything happens directly in your browser.
+            </p>
+
+        </section>
+
+        <section class="generator">
+
+            <!-- LEFT SIDE -->
+            <div class="generator-panel">
+
+                <div class="panel-heading">
+
+                    <div>
+                        <span class="eyebrow">
+                            CONTENT
+                        </span>
+
+                        <h2>
+                            Create your QR code
+                        </h2>
+                    </div>
+
+                    <span
+                        id="character-count"
+                        class="character-count"
+                    >
+                        0 characters
+                    </span>
+
+                </div>
+
+                <!-- INPUT -->
+                <div class="field">
+
+                    <label for="qr-input">
+                        Text or URL
+                    </label>
+
+                    <div class="textarea-wrapper">
+
+                        <textarea
+                            id="qr-input"
+                            maxlength="1500"
+                            placeholder="https://www.example.com"
+                            spellcheck="false"
+                        ></textarea>
+
+                        <button
+                            id="copy-input-btn"
+                            class="inside-button"
+                            type="button"
+                        >
+                            Copy
+                        </button>
+
+                    </div>
+
+                    <p class="field-help">
+                        Enter a website, message, email address,
+                        phone number or any other text.
+                    </p>
+
+                </div>
+
+                <!-- SIZE -->
+                <div class="settings-grid">
+
+                    <div class="field">
+
+                        <label for="size-select">
+                            QR Size
+                        </label>
+
+                        <select id="size-select">
+
+                            <option value="180">
+                                Small — 180 × 180
+                            </option>
+
+                            <option
+                                value="240"
+                                selected
+                            >
+                                Medium — 240 × 240
+                            </option>
+
+                            <option value="320">
+                                Large — 320 × 320
+                            </option>
+
+                            <option value="420">
+                                Extra Large — 420 × 420
+                            </option>
+
+                            <option value="600">
+                                Maximum — 600 × 600
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                    <!-- FILE NAME -->
+                    <div class="field">
+
+                        <label for="filename-input">
+                            File Name
+                        </label>
+
+                        <input
+                            id="filename-input"
+                            type="text"
+                            value="qr-code"
+                            placeholder="qr-code"
+                            maxlength="60"
+                        >
+
+                    </div>
+
+                </div>
+
+                <!-- COLORS -->
+                <div class="color-section">
+
+                    <div class="section-title">
+
+                        <div>
+                            <span class="eyebrow">
+                                APPEARANCE
+                            </span>
+
+                            <h3>
+                                Customize colors
+                            </h3>
+                        </div>
+
+                        <button
+                            id="reset-colors-btn"
+                            class="text-button"
+                            type="button"
+                        >
+                            Reset colors
+                        </button>
+
+                    </div>
+
+                    <div class="color-grid">
+
+                        <div class="field">
+
+                            <label for="foreground-color">
+                                QR Color
+                            </label>
+
+                            <div class="color-input">
+
+                                <input
+                                    id="foreground-color"
+                                    type="color"
+                                    value="#111827"
+                                >
+
+                                <input
+                                    id="foreground-hex"
+                                    type="text"
+                                    value="#111827"
+                                    maxlength="7"
+                                >
+
+                            </div>
+
+                        </div>
+
+                        <div class="field">
+
+                            <label for="background-color">
+                                Background
+                            </label>
+
+                            <div class="color-input">
+
+                                <input
+                                    id="background-color"
+                                    type="color"
+                                    value="#ffffff"
+                                >
+
+                                <input
+                                    id="background-hex"
+                                    type="text"
+                                    value="#ffffff"
+                                    maxlength="7"
+                                >
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- PRESETS -->
+                    <div class="preset-section">
+
+                        <span class="preset-label">
+                            Quick presets
+                        </span>
+
+                        <div class="preset-list">
+
+                            <button
+                                class="color-preset active"
+                                type="button"
+                                data-dark="#111827"
+                                data-light="#ffffff"
+                                aria-label="Classic"
+                                title="Classic"
+                            >
+                                <span
+                                    style="background:#111827"
+                                ></span>
+                                <span
+                                    style="background:#ffffff"
+                                ></span>
+                            </button>
+
+                            <button
+                                class="color-preset"
+                                type="button"
+                                data-dark="#ffffff"
+                                data-light="#111827"
+                                aria-label="Dark"
+                                title="Dark"
+                            >
+                                <span
+                                    style="background:#ffffff"
+                                ></span>
+                                <span
+                                    style="background:#111827"
+                                ></span>
+                            </button>
+
+                            <button
+                                class="color-preset"
+                                type="button"
+                                data-dark="#f59e0b"
+                                data-light="#111827"
+                                aria-label="Orange"
+                                title="Orange"
+                            >
+                                <span
+                                    style="background:#f59e0b"
+                                ></span>
+                                <span
+                                    style="background:#111827"
+                                ></span>
+                            </button>
+
+                            <button
+                                class="color-preset"
+                                type="button"
+                                data-dark="#2563eb"
+                                data-light="#eff6ff"
+                                aria-label="Blue"
+                                title="Blue"
+                            >
+                                <span
+                                    style="background:#2563eb"
+                                ></span>
+                                <span
+                                    style="background:#eff6ff"
+                                ></span>
+                            </button>
+
+                            <button
+                                class="color-preset"
+                                type="button"
+                                data-dark="#059669"
+                                data-light="#ecfdf5"
+                                aria-label="Green"
+                                title="Green"
+                            >
+                                <span
+                                    style="background:#059669"
+                                ></span>
+                                <span
+                                    style="background:#ecfdf5"
+                                ></span>
+                            </button>
+
+                            <button
+                                class="color-preset"
+                                type="button"
+                                data-dark="#9333ea"
+                                data-light="#faf5ff"
+                                aria-label="Purple"
+                                title="Purple"
+                            >
+                                <span
+                                    style="background:#9333ea"
+                                ></span>
+                                <span
+                                    style="background:#faf5ff"
+                                ></span>
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- ERROR -->
+                <div
+                    id="error-message"
+                    class="error-message hidden"
+                ></div>
+
+                <!-- BUTTONS -->
+                <div class="actions">
+
+                    <button
+                        id="generate-btn"
+                        class="primary-button"
+                        type="button"
+                    >
+                        <span>
+                            Generate QR
+                        </span>
+
+                        <span class="button-arrow">
+                            →
+                        </span>
+                    </button>
+
+                    <button
+                        id="clear-btn"
+                        class="secondary-button"
+                        type="button"
+                    >
+                        Clear
+                    </button>
+
+                </div>
+
+                <div class="shortcut">
+                    <kbd>⌘</kbd>
+                    <span>+</span>
+                    <kbd>Enter</kbd>
+                    <span>to generate</span>
+                </div>
+
+            </div>
+
+            <!-- RIGHT SIDE -->
+            <div class="preview-panel">
+
+                <div class="preview-header">
+
+                    <div>
+                        <span class="eyebrow">
+                            PREVIEW
+                        </span>
+
+                        <h2>
+                            Your QR Code
+                        </h2>
+                    </div>
+
+                    <div class="status">
+                        <span class="status-dot"></span>
+                        Ready
+                    </div>
+
+                </div>
+
+                <div
+                    id="qr-placeholder"
+                    class="qr-placeholder"
+                >
+
+                    <div class="placeholder-icon">
+
+                        <div class="mini-qr">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                    </div>
+
+                    <h3>
+                        No QR code yet
+                    </h3>
+
+                    <p>
+                        Start typing or click
+                        Generate QR to create one.
+                    </p>
+
+                </div>
+
+                <div
+                    id="qr-section"
+                    class="qr-result hidden"
+                >
+
+                    <div
+                        id="qr-frame"
+                        class="qr-frame"
+                    >
+                        <div id="qr-code"></div>
+                    </div>
+
+                    <div class="qr-info">
+
+                        <div>
+                            <span>
+                                Format
+                            </span>
+
+                            <strong>
+                                PNG
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Resolution
+                            </span>
+
+                            <strong id="resolution-text">
+                                240 × 240
+                            </strong>
+                        </div>
+
+                        <div>
+                            <span>
+                                Error correction
+                            </span>
+
+                            <strong>
+                                High
+                            </strong>
+                        </div>
+
+                    </div>
+
+                    <button
+                        id="download-btn"
+                        class="download-button"
+                        type="button"
+                    >
+                        <span>
+                            ↓
+                        </span>
+
+                        Download PNG
+                    </button>
+
+                </div>
+
+                <div class="privacy-note">
+
+                    <span class="privacy-icon">
+                        ✓
+                    </span>
+
+                    <div>
+                        <strong>
+                            Private by design
+                        </strong>
+
+                        <p>
+                            Your data never leaves your browser.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="features">
+
+            <div class="feature">
+
+                <span class="feature-number">
+                    01
+                </span>
+
+                <div>
+                    <h3>
+                        Instant generation
+                    </h3>
+
+                    <p>
+                        Your QR code updates automatically
+                        while you type.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="feature">
+
+                <span class="feature-number">
+                    02
+                </span>
+
+                <div>
+                    <h3>
+                        Fully customizable
+                    </h3>
+
+                    <p>
+                        Choose the size and colors to match
+                        your brand or design.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="feature">
+
+                <span class="feature-number">
+                    03
+                </span>
+
+                <div>
+                    <h3>
+                        Download instantly
+                    </h3>
+
+                    <p>
+                        Export your finished QR code as a
+                        high-quality PNG.
+                    </p>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <p>
+            Built by
+            <strong>Razmus Pålsson</strong>
+        </p>
+
+        <span>
+            QR Generator
+        </span>
+
+    </footer>
+
+    <!-- QR CODE LIBRARY -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"
+    ></script>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
